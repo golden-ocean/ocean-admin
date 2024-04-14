@@ -1,0 +1,30 @@
+server:
+  status: "dev" # "dev" or "prod"
+  host: 127.0.0.1
+  port: 3000
+
+datasource:
+  driver: "mysql"
+  host: "172.17.0.2"
+  port: 3306
+  username: "root"
+  password: "xinmiao"
+  charset: "utf8mb4"
+  name: "ocean_admin"
+  max_connections: 100
+  max_idle_connections: 50
+  max_lifetime_connections: 2
+
+jwt:
+  secret-key: "fiber-ocean-access"
+  secret-key-expire-minutes: 1
+  refresh-key: "fiber-ocean-refresh"
+  refresh-key-expire-minutes: 2
+  # refresh-key-expire-hours: 12
+
+redis:
+  host: "localhost"
+  port: 6379
+  username: ""
+  password: ""
+  db: 0
